@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import
+import styles from "./Slider.module.css"
 const Slider = () => {
     const images=["/Image1.png","/Image2.png","/Image3.png","/Image4.png"]
     const [current,setCurrent]=useState(3)
