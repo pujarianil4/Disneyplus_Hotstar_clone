@@ -1,3 +1,58 @@
 .slider{
+    display: flex;
+   
+    align-items: center;
+    width: 98%;
+   
     
+}
+.img > img{
+ width: 100%;
+height: 100%;
+border-radius: 10px;
+
+}
+.img{
+    margin-left: 2%;
+    animation-duration: 1s;
+    animation-name: blureffect;
+    cursor: pointer;
+  
+}
+@keyframes blureffect {
+    from {filter: blur(5px);}
+    to{filter: blur(0px);}
+}
+.back_arrow > button,.forward_arrow> button{
+ background-color: transparent;
+ border: 0px;
+ color: white;
+cursor: pointer;
+ 
+ width: 10px;
+}
+
+
+.back_arrow,.forward_arrow{
+    width: 1%;
+    height: 50px;
+   padding: 10px;
+    z-index: 1;
+   
+}
+
+.left_img{
+    position: absolute;
+    left: -1210px;
+    overflow: hidden;
+    height:61%;
+}
+.right_img{
+    position: absolute;
+    left: 1320px;
+    overflow: hidden;
+    height:400px;
+}
+.left_img> img,.right_img> img{
+    border-radius: 10px;
 }

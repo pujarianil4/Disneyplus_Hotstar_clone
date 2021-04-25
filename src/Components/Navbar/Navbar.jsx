@@ -30,7 +30,7 @@ const Navbar = () => {
                 <MenuIcon className={classes.icon}/>
             </div>
             <div className={styles.logo}>
-            <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" alt=""/>
+            <img src="/logo.svg" alt=""/>
             </div>
           
            <div className={styles.navlink_container}>
