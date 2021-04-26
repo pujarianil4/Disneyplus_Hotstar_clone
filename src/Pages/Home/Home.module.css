@@ -1,0 +1,9 @@
+.home_div > div> h3{
+    margin:0px 57px;
+    position: relative;
+  top: 10px;   
+}
+.home_div > div{
+    margin: 20px 0px;
+    overflow: visible; 
+} 

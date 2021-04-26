@@ -3,7 +3,7 @@
    
     align-items: center;
     width: 98%;
-  border: 1px solid white;
+
     
 }
 
@@ -49,11 +49,14 @@ cursor: pointer;
     height:61%;
 }
 .right_img{
+    width: 2.5%;
     position: absolute;
-    left: 1100px;
+    left: 1310px;
     overflow: hidden;
     height:61%;
+    
 }
 .left_img> img,.right_img> img{
     border-radius: 10px;
+   
 }
