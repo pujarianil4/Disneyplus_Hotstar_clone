@@ -7,7 +7,7 @@ import classes from './Slider.module.css';
 
 
 const Slider = () => {
-    const images=["/Image1.png","/Image2.png","/Image3.png","/Image4.png","/Image5.png"]
+    const images=["/Image1.png","/Image2.png","/Image3.png","/Image4.png","/Image5.png","/Image6.png"]
     const [current,setCurrent]=useState(0)
    const [style,setStyle]=useState({display:"none"})
    const timer= useRef()

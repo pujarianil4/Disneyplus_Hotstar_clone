@@ -1,0 +1,13 @@
+{
+    "movies":[
+        {
+            "title":"The Big Bull",
+            "card_img":"https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9649/959649-v",
+            "duration":"2 hr 33 min",
+            "category":"crime",
+            "above_age":"12+",
+            "languages":"Hindi",
+            "description":"uring the late '80s, Hemant Shah, the man with the Midas touch, pulled off the biggest hustle that shook India's financial fabric. Inspired by true events."
+        }
+    ]
+}

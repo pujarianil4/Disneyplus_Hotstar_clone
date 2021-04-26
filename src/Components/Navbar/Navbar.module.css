@@ -41,10 +41,10 @@ margin: 20px 18px;
 }
 .search{
 margin-top: 10px;
-margin-left:10%;
+margin-left:1%;
 text-align: right;
 
-width: 350px;
+width: 500px;
 }
 
 .search > input{
@@ -53,12 +53,12 @@ width: 350px;
    border-bottom: 1px solid #BCBEC1;
    font-size: 17px;
    font-weight: 600;
-   width: 200px;
+   width: 250px;
    color: #BCBEC1;
    transition: width 0.3s;
  }
  .search > input:focus{
-     width:300px;
+     width:400px;
     border-bottom: 1px solid #1F80E0;
      outline: none;
  }
