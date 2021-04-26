@@ -1,0 +1,39 @@
+ .item{
+  text-align: center;
+}
+
+.card_slider{
+    font-family: sans-serif;
+    /* padding: 10px 30px; */
+  position: relative;
+    /* height: 250px; */
+    width: 95%;
+   overflow: visible;
+
+    margin: auto;
+}
+.back_arrow{
+  position: absolute;
+  left: -30px;
+  top: 100px;
+  width: 40px;
+  height: 40px;
+}
+.back_arrow>button{
+  background-color: transparent;
+  color: white;
+  border: 0px;
+}
+.next_arrow{
+  position: absolute;
+  right: -30px;
+  top: 100px;
+  width: 40px;
+  height: 40px;
+}
+.next_arrow>button{
+  background-color: transparent;
+  color: white;
+  border: 0px;
+}
+
