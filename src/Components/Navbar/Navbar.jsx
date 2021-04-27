@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styles from "./Navbar.module.css"
 import MenuIcon from '@material-ui/icons/Menu';
 import { Avatar, Button, makeStyles } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
+import Tab from '../Tab/Tab';
 const usestyle=makeStyles({
     icon:{
         color:"#A1A3A9"
@@ -24,7 +25,7 @@ const usestyle=makeStyles({
 })
 const Navbar = () => {
     const classes= usestyle()
-   
+   const [dis,setdis]=useState({display:"none"})
     return (
         <div className={styles.navbar}>
             <div className={styles.menuicon}>
@@ -42,8 +43,11 @@ const Navbar = () => {
            <NavLink className={styles.navlink} to="">News</NavLink>
            <NavLink className={styles.navlink} to="">Premium</NavLink>
            <NavLink className={styles.navlink} to="">Disney+</NavLink>
+          
             <span>New</span>
+            
            </div>
+           <div className={styles.kids}><Link><img src="/kids.png" alt=""/></Link></div>
             <div className={styles.search}>
                 <input type="text" placeholder="Search"/>
                 <SearchIcon className={classes.search}/>
@@ -51,9 +55,18 @@ const Navbar = () => {
             <div>
              <Button variant="outlined" className={classes.upgrade}>UPGRADE</Button>
             </div>
-            <div className={styles.avatar}>
+            <div 
+            onMouseEnter={()=>setdis({display:"block"})}
+            
+            className={styles.avatar}>
                 <Avatar />
             </div>
+
+
+           <div  onMouseLeave={()=>setdis({display:"none"})} style={dis}>
+           <Tab/>
+           </div>
+           
         </div>
     );
 };

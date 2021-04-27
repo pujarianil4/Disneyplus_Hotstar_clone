@@ -42,10 +42,11 @@ margin: 20px 18px;
 }
 .search{
 margin-top: 10px;
-margin-left:0px;
+
+width: 450px;
 text-align: right;
 
-width: 500px;
+
 }
 
 .search > input{
@@ -66,4 +67,7 @@ width: 500px;
 
  .avatar{
      margin: 0px 20px;
+ }
+ .kids{
+     margin-top: 10px;
  }
