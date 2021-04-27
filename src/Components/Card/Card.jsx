@@ -2,15 +2,22 @@ import { Button } from '@material-ui/core';
 import React, { useState } from 'react';
 import styles from "./Card.module.css"
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import { useHistory } from 'react-router';
 
 
 const Card = (item) => {
-  const {title,card_img,duration,category,above_age,languages,description}=item
+
+  const {id,title,card_img,duration,category,above_age,languages,description}=item
   console.log(title);
  const [style,setStyle]=useState({display:"none"})
  const [img,setImg]=useState({backgroundImage:`url${card_img}`})
+ const history=useHistory()
+ const redirects=()=>{
+ history.push(`/${id}`)
+ }
+
     return (
-      <div className={styles.maindiv}>
+      <div onClick={redirects} className={styles.maindiv}>
         <div style={img} className={styles.card} 
          onMouseEnter={()=>setStyle({display:"block"})}
          onMouseLeave={()=>setStyle({display:"none"})}>

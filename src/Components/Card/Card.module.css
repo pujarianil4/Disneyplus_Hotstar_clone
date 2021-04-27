@@ -2,7 +2,7 @@
     position: relative;
   width: 200px;
   height: 250px;
-  overflow: visible;
+ cursor: pointer;
 }
 .card{
     margin: 20px;
@@ -11,12 +11,12 @@
    
     height: 200px;
     border-radius: 10px;
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     transition: width 0.4s,height 0.4s,position 0.4s,left 0.4s,top 0.4s;
      transition-delay: 0.1s;
-     overflow: visible;
+
 }
 .card> img{
     width: 100%;
@@ -31,7 +31,7 @@
     height: 240px;
     /* box-shadow: 2px 2px 5px 2px black; */
     border: 1px solid black;
-    overflow: visible;
+   
 }
 .details{
 
@@ -39,7 +39,7 @@
     position: absolute;
     bottom: 50px;
     height: 95px;
-  
+   overflow: hidden;
     /* background-color: #141A28; */
 }
 .details>h4,.details>h5{
