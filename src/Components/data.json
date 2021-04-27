@@ -9,6 +9,7 @@
             "above_age":"12+",
             "languages":"Hindi",
             "year":"2021",
+            "video":"https://youtu.be/Bw6I-KgCSP4",
             "description":"uring the late '80s, Hemant Shah, the man with the Midas touch, pulled off the biggest hustle that shook India's financial fabric. Inspired by true events."
         },
         {    "id":2,
@@ -19,6 +20,7 @@
             "above_age":"12+",
             "languages":"Hindi,English",
             "year":"2016",
+            "video":"https://www.youtube.com/embed/IxxmvrrSSNQ",
             "description":"The government's decision to push a Hero Registration Act to regulate heroes creates a rift among the Avengers and other heroes."
         },
         {
@@ -29,6 +31,7 @@
             "category":"Action",
             "above_age":"12+",
             "languages":"Hindi,english",
+            "video":"https://youtu.be/rabw-DrOF-0",
             "description":"Masquerading as a male soldier to protect her father and tested every step of the way, Mulan must harness her inner-strength and embrace her true potential."
         },
         {
@@ -40,6 +43,7 @@
             "above_age":"15+",
             "languages":"Hindi",
             "year":"2020",
+            "video":"https://youtu.be/j8LZ8OUpNZ4",
             "description":"Perpetually failing engineering students Bony and Fundoo get talked into robbing a bank by the campus loon. What follows is something neither anticipated."
         },
         {
@@ -50,6 +54,7 @@
             "category":"Drama",
             "above_age":"12+",
             "languages":"Hindi",
+            "video":"https://youtu.be/rzlfeocUVhI",
             "description":"Champak, a simple Mithai-seller, will go to any lengths to fulfil daughter Tarika's dream of studying in London, triggering a chain of hilarious misadventures."
         },
         {
@@ -61,6 +66,7 @@
             "above_age":"12+",
             "languages":"Hindi",
             "year":"2021",
+            "video":"https://youtu.be/JerVrbLldXw",
             "description":"After being injected with a special Super-Soldier serum which leads to him developing superpowers Steve must thwart the plans of a warmonger."
         },
         {
@@ -72,6 +78,7 @@
             "above_age":"15+",
             "languages":"Hindi",
             "year":"2020",
+            "video":"https://youtu.be/cffAGIYTEHU",
             "description":"As Aurangzeb captures the Kondhana Fort, Tanhaji Malusare, Shivaji Maharaj's trusted military leader and braveheart, ventures out to win it back."
         },
         {
@@ -82,6 +89,7 @@
             "category":"Horror,Comedy",
             "above_age":"15+",
             "languages":"Hindi",
+            "video":"https://youtu.be/xw0gE8QA1W0",
             "description":"Aasif's belief in logic and science shatters when he gets possessed by a ghost. What starts as a comical journey soon unearths a dark secret."
         },
         {
@@ -93,6 +101,7 @@
             "above_age":"12+",
             "languages":"Hindi,English",
             "year":"2016",
+            "video":"https://youtu.be/Lt-U_t2pUHI",
             "description":"Dr. Strange faces a difficult choice of whether to return to his life of luxury or to protect the world as the most powerful sorcerer in existence."
         },
         {
@@ -104,6 +113,7 @@
             "above_age":"12+",
             "languages":"Hindi,English",
             "year":"2017",
+            "video":"https://youtu.be/-6StS7p5TdQ",
             "description":"Captain Jack Sparrow senses the winds of ill-fortune when his nemesis Captain Salazar escapes from the Devil's Triangle, to kill every pirate at sea including him."
         },
         {
@@ -115,6 +125,7 @@
             "above_age":"6+",
             "languages":"Hindi,English",
             "year":"2019",
+            "video":"https://youtu.be/foyufD52aog",
             "description":"In this live-action retelling of 1992 classic, Aladdin and a power-hungry Grand Vizier vie for a magic lamp that can make their deepest wishes come true."
         }
     ]

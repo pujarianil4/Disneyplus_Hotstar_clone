@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styles from "./Navbar.module.css"
 import MenuIcon from '@material-ui/icons/Menu';
 import { Avatar, Button, makeStyles } from '@material-ui/core';
@@ -24,14 +24,16 @@ const usestyle=makeStyles({
 })
 const Navbar = () => {
     const classes= usestyle()
+   
     return (
         <div className={styles.navbar}>
             <div className={styles.menuicon}>
                 <MenuIcon className={classes.icon}/>
             </div>
-            <div className={styles.logo}>
-            <img src="/logo.svg" alt=""/>
-            </div>
+            <Link to="/">
+            <div  className={styles.logo}>
+           <img src="/logo.svg" alt=""/>
+            </div></Link>
           
            <div className={styles.navlink_container}>
            <NavLink className={styles.navlink} to="">TV</NavLink>

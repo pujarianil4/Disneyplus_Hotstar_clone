@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import Card_slider from '../../Components/Card Slider/Card_slider';
 import data from "../../Components/data.json"
 import Moviecard from '../../Components/Movie_Card/Moviecard';
+import Player from '../../Components/Player/Player';
 import styles from "./Movies.module.css"
 
 const Movies = () => {
@@ -28,6 +29,7 @@ const Movies = () => {
               <h3>More Like This</h3>
           <Card_slider/>
           </div>
+        
         </div>
     );
 };
