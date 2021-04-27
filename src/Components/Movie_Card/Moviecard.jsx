@@ -4,6 +4,7 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import { Button, colors, makeStyles } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import ShareIcon from '@material-ui/icons/Share';
+import { useHistory } from 'react-router';
 
 const useStyle= makeStyles({
     watch:{
@@ -18,10 +19,15 @@ const useStyle= makeStyles({
 })
 const Moviecard = ({...movie}) => {
     const classes=useStyle()
-    const {title,card_img,duration,category,above_age,languages,description,year}=movie
+    const {id,title,card_img,duration,category,above_age,languages,description,year}=movie
+    const history=useHistory()
+    const redirects=()=>{
+        history.push(`/${id}/watch`)
+    }
+
     return (
         <div className={styles.maindiv}>
-            <div className={styles.card}>
+            <div onClick={redirects} className={styles.card}>
                 <div className={styles.test}></div>
              <div className={styles.details}>
                 <div className={styles.title}>

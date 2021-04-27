@@ -1,0 +1,21 @@
+.player{
+    background-color: black;
+    width: 100%;
+    height: 75vh;
+}
+.details{
+    width: 90%;
+    margin: auto;
+}
+.details >p{
+    margin: 10px 0px;
+    font-size: 15px;
+    color: #BBBDC1;
+}
+.details > p> span{
+    font-weight: 600;
+}
+.slider>h3{
+    
+   margin: 20px 0px 0px 60px;
+  }
