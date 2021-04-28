@@ -10,13 +10,13 @@ const Movies = () => {
     const [list, setList] = useState(data.movies)
     const [movie, setMovie] = useState({})
     const { id } = useParams()
-    const {title,card_img,duration,category,above_age,languages,description}=movie
+    
     const getmovie=()=>{
        let movie= list.filter((item)=>item.id==id)
         console.log(movie);
         setMovie(movie[0])
     }
-   
+    // const {title,card_img,duration,category,above_age,languages,description}=movie
     useEffect(()=>{
      getmovie()
      window.scrollTo(0,0)

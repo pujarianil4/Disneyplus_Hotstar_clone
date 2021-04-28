@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styles from "./Navbar.module.css"
 import MenuIcon from '@material-ui/icons/Menu';
 import { Avatar, Button, makeStyles } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import Tab from '../Tab/Tab';
+import firebase from "../../Auth/firebase"
+import { AuthContext } from '../../Contest/AuthContest';
 const usestyle=makeStyles({
     icon:{
         color:"#A1A3A9"
@@ -26,6 +28,16 @@ const usestyle=makeStyles({
 const Navbar = () => {
     const classes= usestyle()
    const [dis,setdis]=useState({display:"none"})
+   const { state,dispatch}=useContext(AuthContext)
+   console.log(state.user);
+   const signout=()=>{
+    firebase.auth().signOut().then(() => {
+        console.log("log out");
+        dispatch({type:"USER_OUT"})
+      }).catch((error) => {
+        // An error happened.
+      });
+}
     return (
         <div className={styles.navbar}>
             <div className={styles.menuicon}>
@@ -59,12 +71,12 @@ const Navbar = () => {
             onMouseEnter={()=>setdis({display:"block"})}
             
             className={styles.avatar}>
-                <Avatar />
+                <Avatar src={state.user.avatar} />
             </div>
 
 
            <div  onMouseLeave={()=>setdis({display:"none"})} style={dis}>
-           <Tab/>
+           <Tab signout={signout}/>
            </div>
            
         </div>

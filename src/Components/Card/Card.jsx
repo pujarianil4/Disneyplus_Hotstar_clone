@@ -8,7 +8,7 @@ import { useHistory } from 'react-router';
 const Card = (item) => {
 
   const {id,title,card_img,duration,category,above_age,languages,description}=item
-  console.log(title);
+ 
  const [style,setStyle]=useState({display:"none"})
  const [img,setImg]=useState({backgroundImage:`url${card_img}`})
  const history=useHistory()
@@ -32,10 +32,10 @@ const Card = (item) => {
           
           <div className={styles.btn}>
             <div className={styles.play}>
-                <PlayArrowIcon/> <h5>Watch Movie</h5>
+                <PlayArrowIcon/> <h5>WATCH MOVIE</h5>
             </div>
             <div className={styles.play}>
-                   <h3>+</h3> <h5>Watch Movie</h5>
+                   <h3>+</h3> <h5>ADD TO WATCHLIST</h5>
             </div>
           </div>
           </div>
