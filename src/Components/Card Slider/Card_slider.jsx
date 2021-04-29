@@ -4,10 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Card from "../Card/Card";
-import data from "../data.json";
+// import data from "../data.json";
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-
+import {list} from "../../Database/database"
+console.log(list);
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -29,7 +30,7 @@ function shuffle(array) {
 
 export default function Card_slider() {
     const [arr, setArr] = React.useState(new Array(10).fill({}));
-    const [movies,setMovies]=useState(data.movies)
+    const [movies,setMovies]=useState(list)
     const customSlider = useRef();
     shuffle(movies)
    const [arrow,setArrow]=useState({display:"none"})

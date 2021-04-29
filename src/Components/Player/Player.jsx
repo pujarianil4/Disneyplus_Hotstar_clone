@@ -2,16 +2,17 @@ import React, { useEffect, useState } from 'react';
 import ReactPlayer from "react-player"
 import { useParams } from 'react-router';
 import styles from "./Player.module.css";
-import data from "../data.json"
+// import data from "../data.json"
 import Card_slider from '../Card Slider/Card_slider';
+import {list} from "../../Database/database";
 const Player = () => {
  
-    const [list, setList] = useState(data.movies)
+    const [lists, setList] = useState(list)
     const [movie, setMovie] = useState({})
     const { id } = useParams()
     const {title,card_img,duration,category,above_age,languages,description,video,year}=movie
     const getmovie=()=>{
-       let movie= list.filter((item)=>item.id==id)
+       let movie= lists.filter((item)=>item.id==id)
         console.log(movie);
         setMovie(movie[0])
     }
