@@ -1,14 +1,15 @@
 import firebase from 'firebase/app'
 import "firebase/auth" 
+import { APP_ID, AUTH_DOMAIN, MEASUREMENT_ID, MSG_SENDER_ID, PROJECT_ID, REACT_APP_API_KEY, STORAGE_BUCKET } from '../env';
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBCJjOAFE9hFt_ILwB247CJinm8NbcEjvQ",
-    authDomain: "disneyplus-hotstar-clone.firebaseapp.com",
-    projectId: "disneyplus-hotstar-clone",
-    storageBucket: "disneyplus-hotstar-clone.appspot.com",
-    messagingSenderId: "370641058048",
-    appId: "1:370641058048:web:b708a6a8f43d5890e4dbe5",
-    measurementId: "G-SJ9KWSEVQP"
+    apiKey: REACT_APP_API_KEY,
+    authDomain: AUTH_DOMAIN,
+    projectId: PROJECT_ID,
+    storageBucket: STORAGE_BUCKET,
+    messagingSenderId: MSG_SENDER_ID,
+    appId: APP_ID,
+    measurementId: MEASUREMENT_ID
   };
 
 firebase.initializeApp(firebaseConfig);

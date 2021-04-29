@@ -12,17 +12,17 @@ const Routes = () => {
     const{state}=useContext(AuthContext)
     return (
         <div>
-        {  <Navbar/>}
+        { state.isAuth&& <Navbar/>}
        
-            <Route exact={true} path="/">
+            <PrivateRoute exact={true} path="/">
                 <Home/>
-            </Route>
-            <Route exact={true} path="/:id">
+            </PrivateRoute>
+            <PrivateRoute exact={true} path="/:id">
                 <Movies/>
-            </Route>
-            <Route exact={true} path="/:id/watch">
+            </PrivateRoute>
+            <PrivateRoute exact={true} path="/:id/watch">
               <Player/>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
                 <Login/>
             </Route>

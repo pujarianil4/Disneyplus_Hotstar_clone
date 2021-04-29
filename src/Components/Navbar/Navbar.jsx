@@ -7,6 +7,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import Tab from '../Tab/Tab';
 import firebase from "../../Auth/firebase"
 import { AuthContext } from '../../Contest/AuthContest';
+import { setlocal } from '../../Auth/localhost';
 const usestyle=makeStyles({
     icon:{
         color:"#A1A3A9"
@@ -34,6 +35,7 @@ const Navbar = () => {
     firebase.auth().signOut().then(() => {
         console.log("log out");
         dispatch({type:"USER_OUT"})
+        setlocal("user",false)
       }).catch((error) => {
         // An error happened.
       });

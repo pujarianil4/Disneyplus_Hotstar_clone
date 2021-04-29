@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Redirect } from 'react-router';
 import { AuthContext } from '../Contest/AuthContest';
 import firebase from "./firebase"
+import { setlocal } from './localhost';
 import styles from "./Login.module.css"
 const Login = () => {
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -47,6 +48,7 @@ const Login = () => {
 
              dispatch({type:"GET_USER",data:userdata})
               setShow(true)
+              setlocal("user",userdata)
             }else{
                 console.log("not login");
                 setShow(true)
@@ -64,15 +66,14 @@ const signout=()=>{
       });
 }
 
-// console.log(state);
-// if(state.isAuth){
-//   return <Redirect to="/" />
-// }
+console.log(state);
+if(state.isAuth){
+  return <Redirect to="/" />
+}
   
     return (
       <>
-    { state.loading? <div>Loading...</div>
-        :show?(<div className={styles.login}>
+    { <div className={styles.login}>
           <div className={styles.bg_img}>
           <img src="/login-background.jpg" alt=""/>
           </div>
@@ -84,9 +85,7 @@ const signout=()=>{
             
          </div>
          
-        </div>):(
-          <div><h1 style={{textAlign:"center"}}>Loading...</h1></div>
-        )
+        </div> 
 }
      </>   
     );
