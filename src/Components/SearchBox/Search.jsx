@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import data from "../data.json";
+//import data from "../data.json";
 import styles from "./Search.module.css"
 import Search_card from './Search_card';
+import {list} from "../../Database/database"
 const Search = ({input}) => {
-const [movies,setMovies]=useState(data.movies)
+const [movies,setMovies]=useState(list)
 const [get,setGet]=useState([])
 //console.log(input?input:false);
 const [show,setShow]=useState(false)
