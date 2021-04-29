@@ -44,3 +44,7 @@
     margin: auto;
 
 }
+.btn> button:hover{
+ background-color: gray;
+ color: #030b17;
+}

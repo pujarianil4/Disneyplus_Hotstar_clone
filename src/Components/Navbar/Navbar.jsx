@@ -8,6 +8,7 @@ import Tab from '../Tab/Tab';
 import firebase from "../../Auth/firebase"
 import { AuthContext } from '../../Contest/AuthContest';
 import { setlocal } from '../../Auth/localhost';
+import Search from '../SearchBox/Search';
 const usestyle=makeStyles({
     icon:{
         color:"#A1A3A9"
@@ -29,8 +30,10 @@ const usestyle=makeStyles({
 const Navbar = () => {
     const classes= usestyle()
    const [dis,setdis]=useState({display:"none"})
+  const[input,setInput]=useState("")
+
    const { state,dispatch}=useContext(AuthContext)
-   console.log(state.user);
+ 
    const signout=()=>{
     firebase.auth().signOut().then(() => {
         console.log("log out");
@@ -40,6 +43,9 @@ const Navbar = () => {
         // An error happened.
       });
 }
+
+   
+
     return (
         <div className={styles.navbar}>
             <div className={styles.menuicon}>
@@ -63,8 +69,11 @@ const Navbar = () => {
            </div>
            <div className={styles.kids}><Link><img src="/kids.png" alt=""/></Link></div>
             <div className={styles.search}>
-                <input type="text" placeholder="Search"/>
+                <input type="text" placeholder="Search" onChange={(e)=>setInput(e.target.value)} />
                 <SearchIcon className={classes.search}/>
+            </div>
+            <div>
+                <Search input={input}/>
             </div>
             <div>
              <Button variant="outlined" className={classes.upgrade}>UPGRADE</Button>
