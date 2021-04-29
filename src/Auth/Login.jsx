@@ -3,6 +3,7 @@ import { Redirect } from 'react-router';
 import { AuthContext } from '../Contest/AuthContest';
 import firebase from "./firebase"
 import { setlocal } from './localhost';
+import { Button, makeStyles } from '@material-ui/core';
 import styles from "./Login.module.css"
 const Login = () => {
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -81,7 +82,7 @@ if(state.isAuth){
 
          <div className={styles.login_btn}>
            <img src="/list.svg" alt=""/>
-         <button onClick={googleauth}>SignIn with Google</button>
+         <Button onClick={googleauth}>SignIn with Google</Button>
             
          </div>
          
