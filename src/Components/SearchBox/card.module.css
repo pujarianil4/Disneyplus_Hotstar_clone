@@ -1,7 +1,7 @@
 .card{
     background-color: #111a38;
     width: 100%;
-    height: 150px;
+    height: 120px;
     margin-bottom: 10px;
     justify-content: space-between;
     display: flex;
@@ -10,11 +10,16 @@
 .card:hover{
     background-color: #242e47;
 }
-.details{
-   
-    width: 74%;
-    margin-left: 2%;
+.details>h3{
+   font-size: 15px;
+
+
 }
+.details{
+
+    width: 75%;
+}
+
 .details> div{
     display: flex;
 }
@@ -34,6 +39,7 @@
 .details>p{
     color: gray;
     margin-bottom: 5px;
+    font-size: 15px;
 }
 .img{
     width: 24%;
