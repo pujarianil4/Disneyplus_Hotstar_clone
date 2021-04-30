@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Route } from 'react-router';
 import Login from '../Auth/Login';
+import Footer from '../Components/Footer/Footer';
 import Navbar from '../Components/Navbar/Navbar';
 import Player from '../Components/Player/Player';
 import { AuthContext } from '../Contest/AuthContest';
@@ -26,6 +27,7 @@ const Routes = () => {
             <Route path="/login">
                 <Login/>
             </Route>
+            {/* { state.isAuth&& <Footer/>} */}
         </div>
     );
 };

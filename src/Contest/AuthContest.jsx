@@ -6,7 +6,8 @@ import { getlocal, setlocal } from "../Auth/localhost"
 const data= getlocal("user")
 const init={
     user:data|| [],
-    isAuth:data.verified|| false,
+    // isAuth:true,
+     isAuth:data.verified|| false,
     loading:false
 }
 

@@ -5,7 +5,7 @@ import data from "../../Components/data.json"
 import Moviecard from '../../Components/Movie_Card/Moviecard';
 import Player from '../../Components/Player/Player';
 import styles from "./Movies.module.css"
-
+import Footer from "../../Components/Footer/Footer"
 const Movies = () => {
     const [list, setList] = useState(data.movies)
     const [movie, setMovie] = useState({})
@@ -30,7 +30,7 @@ const Movies = () => {
               <h3>More Like This</h3>
           <Card_slider/>
           </div>
-        
+        <Footer/>
         </div>
     );
 };

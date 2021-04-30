@@ -5,6 +5,7 @@ import styles from "./Player.module.css";
 // import data from "../data.json"
 import Card_slider from '../Card Slider/Card_slider';
 import {list} from "../../Database/database";
+import Footer from '../Footer/Footer';
 const Player = () => {
  
     const [lists, setList] = useState(list)
@@ -49,7 +50,7 @@ const Player = () => {
               <h3>More Like This</h3>
           <Card_slider/>
           </div>
-         
+         <Footer/>
         </div>
     );
 };
