@@ -36,22 +36,22 @@ export default function Card_slider() {
    const [arrow,setArrow]=useState({display:"none"})
 
   
-    const renderArrows = () => {
-        return (
-          <div >
-            <button
+    // const renderArrows = () => {
+    //     return (
+    //       <div >
+    //         <button
              
               
-              onClick={() => customSlider.current.slickPrev()}
-            >
-              <ArrowBackIosIcon />
-            </button>
-            <button onClick={() => customSlider.current.slickNext()}>
-              <ArrowForwardIosIcon />
-            </button>
-          </div>
-        );
-      };
+    //           onClick={() => customSlider.current.slickPrev()}
+    //         >
+    //           <ArrowBackIosIcon />
+    //         </button>
+    //         <button onClick={() => customSlider.current.slickNext()}>
+    //           <ArrowForwardIosIcon />
+    //         </button>
+    //       </div>
+    //     );
+    //   };
   return (
     <div className={styles.card_slider}>
       <div onMouseEnter={()=>setArrow({display:"block"})}
@@ -63,7 +63,7 @@ export default function Card_slider() {
       <Slider
         ref={(slider)=> customSlider.current=slider}
         dots={false}
-        slidesToShow={8}
+        slidesToShow={7}
         slidesToScroll={1}
         autoplay={false}
         infinite={false}

@@ -12,6 +12,7 @@ const Player = () => {
     const [movie, setMovie] = useState({})
     const { id } = useParams()
     const {title,card_img,duration,category,above_age,languages,description,video,year}=movie
+    console.log(movie);
     const getmovie=()=>{
        let movie= lists.filter((item)=>item.id==id)
         console.log(movie);
