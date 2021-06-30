@@ -6,6 +6,7 @@
  top: 0;
  width: 100%;
  z-index: 1;
+
 }
 
 /* .navbar > a{
@@ -43,7 +44,7 @@ margin: 20px 18px;
 .search{
 margin-top: 10px;
 
-width: 450px;
+width: 350px;
 text-align: right;
 
 
@@ -60,7 +61,7 @@ text-align: right;
    transition: width 0.3s;
  }
  .search > input:focus{
-     width:400px;
+     width:300px;
     border-bottom: 1px solid #1F80E0;
      outline: none;
  }
